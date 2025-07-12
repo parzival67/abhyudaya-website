@@ -18,9 +18,9 @@ import {
   Sparkles
 } from 'lucide-react';
 import Link from 'next/link';
-import { programs, getProgramsByCategory } from '@/lib/cms';
+import { programs } from '@/lib/cms';
 
-const iconMap: { [key: string]: any } = {
+const iconMap: Record<string, React.ElementType> = {
   Stethoscope,
   MessageCircle,
   Target,

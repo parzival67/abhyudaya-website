@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { Language, translations, getTranslation } from '@/lib/cms';
+import { Language, getTranslation } from '@/lib/cms';
 
 interface AppContextType {
   language: Language;

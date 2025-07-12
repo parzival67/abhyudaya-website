@@ -23,7 +23,6 @@ import {
   Award,
   Target,
   Sun,
-  Leaf,
   MessageCircle,
   GraduationCap,
   Stethoscope,
@@ -50,7 +49,6 @@ export default function Home() {
   const { language, setLanguage, isDarkMode, toggleDarkMode, t } = useApp();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState(0);
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -63,7 +61,7 @@ export default function Home() {
   }, []);
 
   // Use CMS data for programs
-  const iconMap: { [key: string]: any } = {
+  const iconMap: Record<string, React.ElementType> = {
     Stethoscope,
     MessageCircle,
     Target,
@@ -77,7 +75,7 @@ export default function Home() {
   };
 
   // Icon mapping for impact stats
-  const impactIconMap: { [key: string]: any } = {
+  const impactIconMap: Record<string, React.ElementType> = {
     Heart,
     Users,
     Target,
