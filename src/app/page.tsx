@@ -9,17 +9,13 @@ import {
   Phone, 
   Mail, 
   MapPin, 
-  ArrowRight, 
   Star,
   ChevronDown,
   Globe,
   Sparkles,
   Shield,
   BookOpen,
-  Clock,
-  CheckCircle,
   ChevronUp,
-  Play,
   Award,
   Target,
   Sun,
@@ -610,7 +606,7 @@ export default function Home() {
                 <p className={`text-gray-700 dark:text-gray-300 leading-relaxed mb-6 italic text-lg flex-grow ${
                   language === 'kn' ? 'font-baloo-tamma' : 'font-inter'
                 }`}>
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </p>
                 
                 {/* Rating */}
@@ -665,7 +661,7 @@ export default function Home() {
                   <p className={`text-gray-700 dark:text-gray-300 leading-relaxed mb-3 italic text-sm flex-grow line-clamp-4 ${
                     language === 'kn' ? 'font-baloo-tamma' : 'font-inter'
                   }`}>
-                    "{testimonial.content}"
+                    &ldquo;{testimonial.content}&rdquo;
                   </p>
                   
                   {/* Rating */}

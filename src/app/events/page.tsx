@@ -7,7 +7,6 @@ import {
   Filter, 
   Search, 
   Calendar, 
-  Clock, 
   MapPin, 
   Users, 
   CheckCircle,
@@ -15,7 +14,7 @@ import {
   ExternalLink
 } from 'lucide-react';
 import Link from 'next/link';
-import { events, getEventsByType } from '@/lib/cms';
+import { events } from '@/lib/cms';
 
 export default function EventsPage() {
   const [selectedType, setSelectedType] = useState<string>('All');
@@ -245,7 +244,7 @@ export default function EventsPage() {
               Upcoming Highlights
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto font-inter">
-              Don't miss these important events and opportunities to connect with our community.
+              Don&apos;t miss these important events and opportunities to connect with our community.
             </p>
           </motion.div>
 

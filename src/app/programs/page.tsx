@@ -15,7 +15,9 @@ import {
   Heart,
   Shield,
   GraduationCap,
-  Sparkles
+  Sparkles,
+  BookOpen,
+  FileText
 } from 'lucide-react';
 import Link from 'next/link';
 import { programs } from '@/lib/cms';
@@ -27,7 +29,10 @@ const iconMap: Record<string, React.ElementType> = {
   Heart,
   Shield,
   GraduationCap,
-  Sparkles
+  Sparkles,
+  BookOpen,
+  Users,
+  FileText
 };
 
 export default function ProgramsPage() {
@@ -85,7 +90,7 @@ export default function ProgramsPage() {
               Our Programs & Services
             </h1>
             <p className="text-xl text-sky-100 mb-8 max-w-3xl mx-auto font-inter">
-              Comprehensive programs designed to support every aspect of a child's development 
+              Comprehensive programs designed to support every aspect of a child&apos;s development 
               and family needs through personalized care and innovative therapies.
             </p>
             
@@ -225,7 +230,7 @@ export default function ProgramsPage() {
               Ready to Get Started?
             </h2>
             <p className="text-xl text-gray-600 mb-8 font-inter">
-              Contact us to learn more about our programs and how we can support your child's development.
+              Contact us to learn more about our programs and how we can support your child&apos;s development.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.button
